@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form name="tokenindex">
+    <fieldset name="tokenindex">
+        <fields name="tokenindex">
+			<field nema="token_index"
+				   type="text"
+				   label="PLG_CONSOLE_CHOCOCSV_TOKEN_INDEX_LABEL"
+				   description="PLG_CONSOLE_CHOCOCSV_TOKEN_INDEX_DESCRIPTION"
+				   filter="alnum"
+				   hint="app001"
+
+			/>
+            <field name="base_url"
+                   type="url"
+                   default="https://example.org"
+                   label="PLG_CONSOLE_CHOCOCSV_BASE_URL_LABEL"
+                   description="PLG_CONSOLE_CHOCOCSV_BASE_URL_DESCRIPTION"
+                   scheme="https"
+                   size="100"
+				   maxlength="100"
+                   validate="url"
+                   required="true"
+            />
+            <field name="base_path"
+                   type="url"
+                   default="/api/index.php/v1"
+                   label="PLG_CONSOLE_CHOCOCSV_BASE_PATH_LABEL"
+                   description="PLG_CONSOLE_CHOCOCSV_BASE_PATH_DESCRIPTION"
+                   relative="true"
+				   size="100"
+				   maxlength="50"
+                   validate="url"
+                   required="true"
+            />
+            <field name="auth_apikey"
+                   type="password"
+                   default=""
+                   label="PLG_CONSOLE_CHOCOCSV_AUTH_API_KEY_LABEL"
+                   description="PLG_CONSOLE_CHOCOCSV_AUTH_API_KEY_DESCRIPTION"
+                   filter="raw"
+                   required="true"
+            />
+        </fields>
+    </fieldset>
+</form>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="/var/www/gene/build/os-linux/php-8.3.2-1+ubuntu22.04.1+deb.sury.org+1/date-2024-01-23_00-33/plg_console_chococsv/phpunit.xml" tests="1" assertions="0" errors="0" failures="0" skipped="0" time="5.445070">
+    <testsuite name="Project" tests="1" assertions="0" errors="0" failures="0" skipped="0" time="5.445070">
+      <testsuite name="Tests\Integration\Console\Command\DeployArticleCommandTest" file="/var/www/gene/build/os-linux/php-8.3.2-1+ubuntu22.04.1+deb.sury.org+1/date-2024-01-23_00-33/plg_console_chococsv/Tests/Integration/Console/Command/DeployArticleCommandTest.php" tests="1" assertions="0" errors="0" failures="0" skipped="0" time="5.445070">
+        <testcase name="testDeploy" file="/var/www/gene/build/os-linux/php-8.3.2-1+ubuntu22.04.1+deb.sury.org+1/date-2024-01-23_00-33/plg_console_chococsv/Tests/Integration/Console/Command/DeployArticleCommandTest.php" line="24" class="Tests\Integration\Console\Command\DeployArticleCommandTest" classname="Tests.Integration.Console.Command.DeployArticleCommandTest" assertions="0" time="5.445070"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>
