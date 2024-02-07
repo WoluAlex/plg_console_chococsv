@@ -40,6 +40,35 @@
                    filter="raw"
                    required="true"
             />
+			<field
+				name="extra_default_fields"
+				type="combo"
+				default=""
+				label="PLG_CONSOLE_CHOCOCSV_EXTRA_DEFAULT_FIELDS_LABEL"
+				description="PLG_CONSOLE_CHOCOCSV_EXTRA_DEFAULT_FIELDS_DESCRIPTION"
+				hint="publish_up,publish_down,featured,featured_up,featured_down,images,urls"
+				required="false"
+			>
+				<option value="publish_up">PLG_CONSOLE_CHOCOCSV_PUBLISH_UP_LABEL</option>
+				<option value="publish_down">PLG_CONSOLE_CHOCOCSV_PUBLISH_DOWN_LABEL</option>
+				<option value="featured">PLG_CONSOLE_CHOCOCSV_FEATURED_LABEL</option>
+				<option value="featured_up">PLG_CONSOLE_CHOCOCSV_FEATURED_UP_LABEL</option>
+				<option value="featured_down">PLG_CONSOLE_CHOCOCSV_FEATURED_DOWN_LABEL</option>
+				<option value="images">PLG_CONSOLE_CHOCOCSV_IMAGES_LABEL</option>
+				<option value="urls">PLG_CONSOLE_CHOCOCSV_URLS_LABEL</option>
+			</field>
+			<field
+				name="custom_fields"
+				type="sql"
+				default=""
+				label="PLG_CONSOLE_CHOCOCSV_CHOOSE_CUSTOM_FIELDS_LABEL"
+				description="PLG_CONSOLE_CHOCOCSV_CHOOSE_CUSTOM_FIELDS_DESCRIPTION"
+				query="SELECT f.name, f.title FROM #__fields AS f WHERE f.context = 'com_content.article' AND f.state = 1"
+				key_field="name"
+				value_field="title"
+				required="false"
+				header="PLG_CONSOLE_CHOCOCSV_CHOOSE_AN_OPTION_LABEL"
+			/>
         </fields>
     </fieldset>
 </form>

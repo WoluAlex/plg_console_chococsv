@@ -221,14 +221,6 @@ TEXT;
             }
         }
 
-        // Other Joomla articles fields
-        $this->extraDefaultFieldKeys = $this->getParams()->get('extra_default_fields', []);
-
-// Add custom fields support (shout-out to Marc DECHÈVRE : CUSTOM KING)
-// The keys are the columns in the csv with the custom fields names (that's how Joomla! Web Services Api work as of today)
-// For the custom fields to work they need to be added in the csv and to exists in the Joomla! site.
-        $this->customFieldKeys = $this->getParams()->get('custom_fields', []);
-
 // Silent mode
 // 0: hide both response result and key value pairs
 // 1: show response result only
@@ -286,6 +278,14 @@ TEXT;
             // Your Joomla! Api Token (DO NOT STORE IT IN YOUR REPO USE A VAULT OR A PASSWORD MANAGER)
             $this->token    = ArrayHelper::getColumn($computedDestinationsToArray, 'api_authtoken', 'token_index');
             $this->basePath = ArrayHelper::getColumn($computedDestinationsToArray, 'base_path', 'token_index');
+
+            // Other Joomla articles fields
+            $this->extraDefaultFieldKeys = ArrayHelper::getColumn($computedDestinationsToArray,'extra_default_fields', 'token_index');
+
+// Add custom fields support (shout-out to Marc DECHÈVRE : CUSTOM KING)
+// The keys are the columns in the csv with the custom fields names (that's how Joomla! Web Services Api work as of today)
+// For the custom fields to work they need to be added in the csv and to exists in the Joomla! site.
+            $this->customFieldKeys = ArrayHelper::getColumn($computedDestinationsToArray,'custom_fields', 'token_index');
 
             $this->deployScript();
         } catch (Throwable $e) {
