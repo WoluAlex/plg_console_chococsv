@@ -49,13 +49,13 @@
 				hint="publish_up,publish_down,featured,featured_up,featured_down,images,urls"
 				required="false"
 			>
-				<option value="publish_up">PLG_CONSOLE_CHOCOCSV_PUBLISH_UP_LABEL</option>
-				<option value="publish_down">PLG_CONSOLE_CHOCOCSV_PUBLISH_DOWN_LABEL</option>
-				<option value="featured">PLG_CONSOLE_CHOCOCSV_FEATURED_LABEL</option>
-				<option value="featured_up">PLG_CONSOLE_CHOCOCSV_FEATURED_UP_LABEL</option>
-				<option value="featured_down">PLG_CONSOLE_CHOCOCSV_FEATURED_DOWN_LABEL</option>
-				<option value="images">PLG_CONSOLE_CHOCOCSV_IMAGES_LABEL</option>
-				<option value="urls">PLG_CONSOLE_CHOCOCSV_URLS_LABEL</option>
+				<option value="publish_up">publish_up</option>
+				<option value="publish_down">publish_down</option>
+				<option value="featured">featured</option>
+				<option value="featured_up">featured_up</option>
+				<option value="featured_down">featured_down</option>
+				<option value="images">images</option>
+				<option value="urls">urls</option>
 			</field>
 			<field
 				name="custom_fields"
