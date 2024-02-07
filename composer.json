@@ -21,9 +21,7 @@
   },
   "require-dev": {
     "symfony/dotenv": "@stable",
-    "phpunit/phpunit": "@stable",
-    "rector/rector": "@stable",
-    "symplify/easy-coding-standard": "@stable"
+    "phpunit/phpunit": "@stable"
   },
   "autoload-dev": {
     "psr-4": {
