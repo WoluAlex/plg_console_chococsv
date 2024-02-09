@@ -23,12 +23,17 @@
     "symfony/dotenv": "@stable",
     "phpunit/phpunit": "@stable"
   },
+  "autoload": {
+    "psr-4": {
+      "AlexApi\\Plugin\\Console\\Chococsv\\":"src/src/"
+    }
+  },
   "autoload-dev": {
     "psr-4": {
       "Tests\\": "Tests/"
     }
   },
   "scripts": {
-    "gen": "export current_hash=\"$(deploy-hash.php $PWD 16)\" && { mkdir -p $HOME/Volumes/PROJECTS/build && cd ./src [ ! -f \"$HOME/Volumes/PROJECTS/build/$(basename $(dirname $PWD))_${current_hash}.zip\" ] && zip -9 -r $HOME/Volumes/PROJECTS/build/$(basename $(dirname $PWD))_${current_hash}.zip . && cd .. ; }"
+    "gen": "export current_hash=\"$(php ./tools/deploy-hash.php $PWD 16)\" && { mkdir -p $HOME/Volumes/PROJECTS/build && cd ./src [ ! -f \"$HOME/Volumes/PROJECTS/build/$(basename $(dirname $PWD))_${current_hash}.zip\" ] && zip -9 -r $HOME/Volumes/PROJECTS/build/$(basename $(dirname $PWD))_${current_hash}.zip . && cd .. ; }"
   }
 }
